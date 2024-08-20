@@ -6,26 +6,26 @@
 	(paper "User" 380 270)
 	(title_block
 		(title "UINIO-MCU-HC32F460PETB")
-		(date "2024-08-12")
+		(date "2024-08-20")
 		(rev "Version 1.0.0")
 		(company "UinIO.com 电子技术实验室")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Pin"
+			(property "Value" "Conn_01x03_Pin"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -51,7 +51,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -86,7 +86,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_Pin_1_1"
+			(symbol "Conn_01x03_Pin_1_1"
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 0.8636 -2.54)
@@ -102,6 +102,18 @@
 				(polyline
 					(pts
 						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -133,8 +145,19 @@
 						(type outline)
 					)
 				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -152,7 +175,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -162,6 +185,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6984,6 +7025,12 @@
 		(uuid "e91d3b88-d5b8-48fe-9da3-005a1edf8400")
 	)
 	(junction
+		(at 199.39 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9f56914-729e-4d54-9479-5f4e856b4639")
+	)
+	(junction
 		(at 233.68 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7214,6 +7261,16 @@
 			(type default)
 		)
 		(uuid "164272c6-5dd8-4b21-bb18-4cf9d8e90579")
+	)
+	(wire
+		(pts
+			(xy 199.39 53.34) (xy 199.39 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a5d75d-88eb-4d0a-9c3d-914b37be71d3")
 	)
 	(wire
 		(pts
@@ -7454,6 +7511,16 @@
 			(type default)
 		)
 		(uuid "37ca0a4c-c1ee-47b6-9044-110e01df20fe")
+	)
+	(wire
+		(pts
+			(xy 199.39 55.88) (xy 198.12 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a84dbfc-8375-459d-bde1-4002e427967a")
 	)
 	(wire
 		(pts
@@ -8107,6 +8174,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 55.88) (xy 199.39 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80643dda-b2c7-49f2-8079-8f00b4cd4a89")
+	)
+	(wire
+		(pts
 			(xy 66.04 210.82) (xy 68.58 210.82)
 		)
 		(stroke
@@ -8127,7 +8204,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 53.34) (xy 198.12 53.34)
+			(xy 199.39 53.34) (xy 198.12 53.34)
 		)
 		(stroke
 			(width 0)
@@ -11596,7 +11673,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 53.34 90)
+		(at 200.66 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11604,7 +11681,7 @@
 		(dnp no)
 		(uuid "14098376-316f-4a23-ac63-0d600c4af58d")
 		(property "Reference" "#PWR030"
-			(at 207.01 53.34 0)
+			(at 207.01 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11613,7 +11690,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.454 53.594 90)
+			(at 203.454 56.134 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11622,7 +11699,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 53.34 0)
+			(at 200.66 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11631,7 +11708,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 53.34 0)
+			(at 200.66 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11640,7 +11717,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 53.34 0)
+			(at 200.66 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12256,6 +12333,76 @@
 			(project "UINIO-MCU-HC32F460PETB"
 				(path "/6fcf9576-1508-4150-862c-de9a7b38786e"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 193.04 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "20c12248-b9e1-4fc7-875d-5e47fdd2318b")
+		(property "Reference" "J10"
+			(at 196.088 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 185.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 193.04 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8033c096-d4c5-4733-a016-0fcb1d6e376e")
+		)
+		(pin "2"
+			(uuid "1ee31b9e-1f68-4e81-94dc-3eee3d85d843")
+		)
+		(pin "1"
+			(uuid "f4ddfe6e-c969-4df3-93b3-41a6103f1bdd")
+		)
+		(instances
+			(project ""
+				(path "/6fcf9576-1508-4150-862c-de9a7b38786e"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -12921,73 +13068,6 @@
 			(project "UINIO-MCU-HC32F460PETB"
 				(path "/6fcf9576-1508-4150-862c-de9a7b38786e"
 					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 193.04 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3a6d9c12-c0ee-4e5a-8eac-5af860c01ce4")
-		(property "Reference" "J4"
-			(at 195.834 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MD"
-			(at 196.088 55.626 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 193.04 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.04 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 193.04 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1602f51d-83ab-45a8-9ca7-524e2bf351d8")
-		)
-		(pin "2"
-			(uuid "42863663-304f-4cd0-b855-9c9ecd01acf9")
-		)
-		(instances
-			(project ""
-				(path "/6fcf9576-1508-4150-862c-de9a7b38786e"
-					(reference "J4")
 					(unit 1)
 				)
 			)
