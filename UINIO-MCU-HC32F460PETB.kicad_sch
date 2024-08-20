@@ -12347,7 +12347,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "20c12248-b9e1-4fc7-875d-5e47fdd2318b")
-		(property "Reference" "J10"
+		(property "Reference" "J4"
 			(at 196.088 46.99 0)
 			(effects
 				(font
@@ -12402,7 +12402,7 @@
 		(instances
 			(project ""
 				(path "/6fcf9576-1508-4150-862c-de9a7b38786e"
-					(reference "J10")
+					(reference "J4")
 					(unit 1)
 				)
 			)
